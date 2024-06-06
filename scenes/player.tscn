@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://cl8213rq5fofh"]
+[gd_scene load_steps=62 format=3 uid="uid://cl8213rq5fofh"]
 
 [ext_resource type="Script" path="res://scripts/character_body_2d.gd" id="1_dk8q3"]
 [ext_resource type="Texture2D" uid="uid://cbkd8eql38pav" path="res://assets/Character/Attack/Warrior_Attack_1.png" id="2_vleun"]
@@ -373,6 +373,14 @@ advance_condition = &"is_on_floor"
 advance_mode = 2
 advance_condition = &"is_on_floor"
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_kb0lp"]
+advance_mode = 2
+advance_condition = &"is_fall"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7d5cb"]
+advance_mode = 2
+advance_condition = &"is_fall"
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_me3u5"]
 states/attack/node = SubResource("AnimationNodeAnimation_vsty4")
 states/attack/position = Vector2(438, 19)
@@ -384,7 +392,7 @@ states/jump/node = SubResource("AnimationNodeAnimation_7itmr")
 states/jump/position = Vector2(386, 219)
 states/run/node = SubResource("AnimationNodeAnimation_b6txn")
 states/run/position = Vector2(548, 100)
-transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_uuucd"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_4dj1f"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_bpg4t"), "attack", "idle", SubResource("AnimationNodeStateMachineTransition_8416b"), "attack", "run", SubResource("AnimationNodeStateMachineTransition_vblk6"), "run", "attack", SubResource("AnimationNodeStateMachineTransition_2ie30"), "idle", "attack", SubResource("AnimationNodeStateMachineTransition_b6pc8"), "idle", "jump", SubResource("AnimationNodeStateMachineTransition_ews4g"), "run", "jump", SubResource("AnimationNodeStateMachineTransition_qf8yv"), "jump", "fall", SubResource("AnimationNodeStateMachineTransition_mw237"), "fall", "run", SubResource("AnimationNodeStateMachineTransition_mqntk"), "fall", "idle", SubResource("AnimationNodeStateMachineTransition_0ywtg")]
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_uuucd"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_4dj1f"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_bpg4t"), "attack", "idle", SubResource("AnimationNodeStateMachineTransition_8416b"), "attack", "run", SubResource("AnimationNodeStateMachineTransition_vblk6"), "run", "attack", SubResource("AnimationNodeStateMachineTransition_2ie30"), "idle", "attack", SubResource("AnimationNodeStateMachineTransition_b6pc8"), "idle", "jump", SubResource("AnimationNodeStateMachineTransition_ews4g"), "run", "jump", SubResource("AnimationNodeStateMachineTransition_qf8yv"), "jump", "fall", SubResource("AnimationNodeStateMachineTransition_mw237"), "fall", "run", SubResource("AnimationNodeStateMachineTransition_mqntk"), "fall", "idle", SubResource("AnimationNodeStateMachineTransition_0ywtg"), "run", "fall", SubResource("AnimationNodeStateMachineTransition_kb0lp"), "idle", "fall", SubResource("AnimationNodeStateMachineTransition_7d5cb")]
 graph_offset = Vector2(0, 3.12295)
 
 [node name="Player" type="CharacterBody2D"]
@@ -393,9 +401,9 @@ script = ExtResource("1_dk8q3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_6tpy6")
-animation = &"idle"
+animation = &"fall"
 autoplay = "idle"
-frame = 2
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-5, 4)
@@ -412,9 +420,9 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_me3u5")
 anim_player = NodePath("../AnimationPlayer")
-parameters/current_length = 0.857143
-parameters/current_position = 0.327718
-parameters/current_delta = 0.00722267
+parameters/current_length = 0.5
+parameters/current_position = 0.285062
+parameters/current_delta = 0.012388
 parameters/conditions/idle = false
 parameters/conditions/is_attack = false
 parameters/conditions/is_fall = false
@@ -424,21 +432,21 @@ parameters/conditions/is_on_floor = false
 parameters/End/current_length = null
 parameters/End/current_position = null
 parameters/End/current_delta = null
-parameters/Start/current_length = null
-parameters/Start/current_position = null
-parameters/Start/current_delta = null
+parameters/Start/current_length = 0.0
+parameters/Start/current_position = 0.0
+parameters/Start/current_delta = 0.0
 parameters/attack/current_length = 0.923077
 parameters/attack/current_position = 0.923077
 parameters/attack/current_delta = 0.0152124
 parameters/fall/current_length = 0.5
-parameters/fall/current_position = 0.0
-parameters/fall/current_delta = 0.0
+parameters/fall/current_position = 0.285062
+parameters/fall/current_delta = 0.012388
 parameters/idle/current_length = 0.857143
-parameters/idle/current_position = 0.327718
-parameters/idle/current_delta = 0.00722267
+parameters/idle/current_position = 0.0423288
+parameters/idle/current_delta = 0.00833333
 parameters/jump/current_length = 0.5
 parameters/jump/current_position = 0.0
 parameters/jump/current_delta = 0.0
 parameters/run/current_length = 0.727273
-parameters/run/current_position = 0.0
-parameters/run/current_delta = 0.0
+parameters/run/current_position = 0.58605
+parameters/run/current_delta = 0.0185517

@@ -55,7 +55,7 @@ func _handle_animations():
 			AnimTree["parameters/conditions/is_attack"] = false
 			AnimTree["parameters/conditions/idle"] = true
 			AnimTree["parameters/conditions/is_moving"] = false
-	else :
+	else:
 		AnimTree["parameters/conditions/is_on_floor"] = false
 		if velocity.y < 0:
 			AnimTree["parameters/conditions/is_jump"] = true
