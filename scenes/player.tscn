@@ -1,0 +1,444 @@
+[gd_scene load_steps=60 format=3 uid="uid://cl8213rq5fofh"]
+
+[ext_resource type="Script" path="res://scripts/character_body_2d.gd" id="1_dk8q3"]
+[ext_resource type="Texture2D" uid="uid://cbkd8eql38pav" path="res://assets/Character/Attack/Warrior_Attack_1.png" id="2_vleun"]
+[ext_resource type="Texture2D" uid="uid://bktfpsspk7nn" path="res://assets/Character/Attack/Warrior_Attack_2.png" id="3_82uhr"]
+[ext_resource type="Texture2D" uid="uid://bjlab14le8o0o" path="res://assets/Character/Attack/Warrior_Attack_3.png" id="4_ysokh"]
+[ext_resource type="Texture2D" uid="uid://c7etuub8qct18" path="res://assets/Character/Attack/Warrior_Attack_4.png" id="5_scfck"]
+[ext_resource type="Texture2D" uid="uid://dive0u2u4qrff" path="res://assets/Character/Attack/Warrior_Attack_5.png" id="6_peebs"]
+[ext_resource type="Texture2D" uid="uid://1g2qyktsouek" path="res://assets/Character/Attack/Warrior_Attack_6.png" id="7_uux71"]
+[ext_resource type="Texture2D" uid="uid://clcywwh8ostd" path="res://assets/Character/Attack/Warrior_Attack_7.png" id="8_p5u82"]
+[ext_resource type="Texture2D" uid="uid://bq4ol4xs71oke" path="res://assets/Character/Attack/Warrior_Attack_8.png" id="9_8ce02"]
+[ext_resource type="Texture2D" uid="uid://dv8wgawvjk44t" path="res://assets/Character/Attack/Warrior_Attack_9.png" id="10_grjlx"]
+[ext_resource type="Texture2D" uid="uid://c5gqpxc70wajn" path="res://assets/Character/Attack/Warrior_Attack_10.png" id="11_60nfu"]
+[ext_resource type="Texture2D" uid="uid://tn3sshycj5y5" path="res://assets/Character/Attack/Warrior_Attack_11.png" id="12_qgm21"]
+[ext_resource type="Texture2D" uid="uid://e43ieew8oeyp" path="res://assets/Character/Attack/Warrior_Attack_12.png" id="13_ag4ky"]
+[ext_resource type="Texture2D" uid="uid://mh5u5oxeitit" path="res://assets/Character/Fall/Warrior_Fall_1.png" id="14_axvoi"]
+[ext_resource type="Texture2D" uid="uid://cu74f5k6lytrw" path="res://assets/Character/Fall/Warrior_Fall_2.png" id="15_ulokq"]
+[ext_resource type="Texture2D" uid="uid://clqocadasyiwt" path="res://assets/Character/Fall/Warrior_Fall_3.png" id="16_yhkyo"]
+[ext_resource type="Texture2D" uid="uid://bt36tp1mnfhnu" path="res://assets/Character/idle/Warrior_Idle_1.png" id="17_n5fl5"]
+[ext_resource type="Texture2D" uid="uid://b8flnwvcxb6s1" path="res://assets/Character/idle/Warrior_Idle_2.png" id="18_87v5t"]
+[ext_resource type="Texture2D" uid="uid://3mop5rbnv8iu" path="res://assets/Character/idle/Warrior_Idle_3.png" id="19_dsswk"]
+[ext_resource type="Texture2D" uid="uid://2s7w8mw2uqxw" path="res://assets/Character/idle/Warrior_Idle_4.png" id="20_0nnyh"]
+[ext_resource type="Texture2D" uid="uid://dwkem033re1rn" path="res://assets/Character/idle/Warrior_Idle_5.png" id="21_kg7i5"]
+[ext_resource type="Texture2D" uid="uid://btt8v3uxugxsg" path="res://assets/Character/idle/Warrior_Idle_6.png" id="22_ypkxf"]
+[ext_resource type="Texture2D" uid="uid://d0ditlsxaa60d" path="res://assets/Character/Jump/Warrior_Jump_1.png" id="23_ui0dy"]
+[ext_resource type="Texture2D" uid="uid://xkuchgo85ryt" path="res://assets/Character/Jump/Warrior_Jump_2.png" id="24_elgwp"]
+[ext_resource type="Texture2D" uid="uid://c6e7cp1co5pc2" path="res://assets/Character/Jump/Warrior_Jump_3.png" id="25_i6l0o"]
+[ext_resource type="Texture2D" uid="uid://di2li6mfqffv5" path="res://assets/Character/Run/Warrior_Run_1.png" id="26_gerk1"]
+[ext_resource type="Texture2D" uid="uid://cvvh3jet3lqmn" path="res://assets/Character/Run/Warrior_Run_2.png" id="27_7q2uc"]
+[ext_resource type="Texture2D" uid="uid://487j40gkg4nc" path="res://assets/Character/Run/Warrior_Run_3.png" id="28_6ufb4"]
+[ext_resource type="Texture2D" uid="uid://c4afd0iucvubf" path="res://assets/Character/Run/Warrior_Run_4.png" id="29_5vykj"]
+[ext_resource type="Texture2D" uid="uid://b4ojxm2tow5au" path="res://assets/Character/Run/Warrior_Run_5.png" id="30_6y6jq"]
+[ext_resource type="Texture2D" uid="uid://caiu78bdteowh" path="res://assets/Character/Run/Warrior_Run_6.png" id="31_g37tg"]
+[ext_resource type="Texture2D" uid="uid://bic3yqaa4ll6r" path="res://assets/Character/Run/Warrior_Run_7.png" id="32_00j5e"]
+[ext_resource type="Texture2D" uid="uid://b2mwmh2166o7m" path="res://assets/Character/Run/Warrior_Run_8.png" id="33_7sfxk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6tpy6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vleun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_82uhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ysokh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_scfck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_peebs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_uux71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_p5u82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8ce02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_grjlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_60nfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qgm21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ag4ky")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 13.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_axvoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ulokq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_yhkyo")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_n5fl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_87v5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_dsswk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0nnyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_kg7i5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ypkxf")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_ui0dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_elgwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_i6l0o")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_gerk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_7q2uc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6ufb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_5vykj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_6y6jq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_g37tg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_00j5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_7sfxk")
+}],
+"loop": true,
+"name": &"run",
+"speed": 11.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_23jn2"]
+size = Vector2(20, 33)
+
+[sub_resource type="Animation" id="Animation_liv8g"]
+length = 0.923077
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0769231, 0.153846, 0.230769, 0.307692, 0.384615, 0.461538, 0.538462, 0.615385, 0.692308, 0.769231, 0.846154),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["attack"]
+}
+
+[sub_resource type="Animation" id="Animation_e4lhc"]
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["fall"]
+}
+
+[sub_resource type="Animation" id="Animation_4lxfc"]
+length = 0.857143
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.142857, 0.285714, 0.428571, 0.571429, 0.714286),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["idle"]
+}
+
+[sub_resource type="Animation" id="Animation_qe7al"]
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["jump"]
+}
+
+[sub_resource type="Animation" id="Animation_hfesl"]
+length = 0.727273
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0909091, 0.181818, 0.272727, 0.363636, 0.454545, 0.545455, 0.636364),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["run"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bxfm7"]
+_data = {
+"attack": SubResource("Animation_liv8g"),
+"fall": SubResource("Animation_e4lhc"),
+"idle": SubResource("Animation_4lxfc"),
+"jump": SubResource("Animation_qe7al"),
+"run": SubResource("Animation_hfesl")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vsty4"]
+animation = &"attack"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_u6k62"]
+animation = &"fall"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_yi88f"]
+animation = &"idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7itmr"]
+animation = &"jump"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_b6txn"]
+animation = &"run"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uuucd"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4dj1f"]
+advance_mode = 2
+advance_condition = &"is_moving"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_bpg4t"]
+advance_mode = 2
+advance_condition = &"idle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8416b"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"idle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vblk6"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"is_moving"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2ie30"]
+advance_mode = 2
+advance_condition = &"is_attack"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_b6pc8"]
+advance_mode = 2
+advance_condition = &"is_attack"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ews4g"]
+advance_mode = 2
+advance_condition = &"is_jump"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qf8yv"]
+advance_mode = 2
+advance_condition = &"is_jump"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mw237"]
+advance_mode = 2
+advance_condition = &"is_fall"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mqntk"]
+advance_mode = 2
+advance_condition = &"is_on_floor"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0ywtg"]
+advance_mode = 2
+advance_condition = &"is_on_floor"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_me3u5"]
+states/attack/node = SubResource("AnimationNodeAnimation_vsty4")
+states/attack/position = Vector2(438, 19)
+states/fall/node = SubResource("AnimationNodeAnimation_u6k62")
+states/fall/position = Vector2(502, 219)
+states/idle/node = SubResource("AnimationNodeAnimation_yi88f")
+states/idle/position = Vector2(319, 100)
+states/jump/node = SubResource("AnimationNodeAnimation_7itmr")
+states/jump/position = Vector2(386, 219)
+states/run/node = SubResource("AnimationNodeAnimation_b6txn")
+states/run/position = Vector2(548, 100)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_uuucd"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_4dj1f"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_bpg4t"), "attack", "idle", SubResource("AnimationNodeStateMachineTransition_8416b"), "attack", "run", SubResource("AnimationNodeStateMachineTransition_vblk6"), "run", "attack", SubResource("AnimationNodeStateMachineTransition_2ie30"), "idle", "attack", SubResource("AnimationNodeStateMachineTransition_b6pc8"), "idle", "jump", SubResource("AnimationNodeStateMachineTransition_ews4g"), "run", "jump", SubResource("AnimationNodeStateMachineTransition_qf8yv"), "jump", "fall", SubResource("AnimationNodeStateMachineTransition_mw237"), "fall", "run", SubResource("AnimationNodeStateMachineTransition_mqntk"), "fall", "idle", SubResource("AnimationNodeStateMachineTransition_0ywtg")]
+graph_offset = Vector2(0, 3.12295)
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(159.5, 89.5)
+script = ExtResource("1_dk8q3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6tpy6")
+animation = &"idle"
+autoplay = "idle"
+frame = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, 4)
+shape = SubResource("RectangleShape2D_23jn2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_top = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bxfm7")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_me3u5")
+anim_player = NodePath("../AnimationPlayer")
+parameters/current_length = 0.857143
+parameters/current_position = 0.327718
+parameters/current_delta = 0.00722267
+parameters/conditions/idle = false
+parameters/conditions/is_attack = false
+parameters/conditions/is_fall = false
+parameters/conditions/is_jump = false
+parameters/conditions/is_moving = false
+parameters/conditions/is_on_floor = false
+parameters/End/current_length = null
+parameters/End/current_position = null
+parameters/End/current_delta = null
+parameters/Start/current_length = null
+parameters/Start/current_position = null
+parameters/Start/current_delta = null
+parameters/attack/current_length = 0.923077
+parameters/attack/current_position = 0.923077
+parameters/attack/current_delta = 0.0152124
+parameters/fall/current_length = 0.5
+parameters/fall/current_position = 0.0
+parameters/fall/current_delta = 0.0
+parameters/idle/current_length = 0.857143
+parameters/idle/current_position = 0.327718
+parameters/idle/current_delta = 0.00722267
+parameters/jump/current_length = 0.5
+parameters/jump/current_position = 0.0
+parameters/jump/current_delta = 0.0
+parameters/run/current_length = 0.727273
+parameters/run/current_position = 0.0
+parameters/run/current_delta = 0.0
