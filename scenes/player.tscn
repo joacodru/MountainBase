@@ -401,9 +401,9 @@ script = ExtResource("1_dk8q3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_6tpy6")
-animation = &"fall"
+animation = &"idle"
 autoplay = "idle"
-frame = 1
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-5, 4)
@@ -420,9 +420,9 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_me3u5")
 anim_player = NodePath("../AnimationPlayer")
-parameters/current_length = 0.5
-parameters/current_position = 0.285062
-parameters/current_delta = 0.012388
+parameters/current_length = 0.857143
+parameters/current_position = 0.386636
+parameters/current_delta = 0.00694444
 parameters/conditions/idle = false
 parameters/conditions/is_attack = false
 parameters/conditions/is_fall = false
@@ -442,8 +442,8 @@ parameters/fall/current_length = 0.5
 parameters/fall/current_position = 0.285062
 parameters/fall/current_delta = 0.012388
 parameters/idle/current_length = 0.857143
-parameters/idle/current_position = 0.0423288
-parameters/idle/current_delta = 0.00833333
+parameters/idle/current_position = 0.386636
+parameters/idle/current_delta = 0.00694444
 parameters/jump/current_length = 0.5
 parameters/jump/current_position = 0.0
 parameters/jump/current_delta = 0.0
