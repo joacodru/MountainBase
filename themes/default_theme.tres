@@ -1,3 +1,43 @@
-[gd_resource type="Theme" format=3 uid="uid://b6ce3qvqiai6b"]
+[gd_resource type="Theme" load_steps=13 format=3 uid="uid://b6ce3qvqiai6b"]
+
+[ext_resource type="FontFile" uid="uid://boq663xpdgjjc" path="res://assets/fonts/PixelifySans-VariableFont_wght.ttf" id="1_3il3f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_agw6t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cr3we"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_okxks"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wri83"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hxbsr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aarei"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ciaw3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mfpr6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ulnm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tl4an"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bqhtr"]
 
 [resource]
+default_font = ExtResource("1_3il3f")
+default_font_size = 16
+Button/colors/font_focus_color = Color(0.562787, 0.165404, 0.164239, 1)
+Button/colors/font_hover_color = Color(0.792503, 0.266999, 0.261912, 1)
+Button/colors/font_pressed_color = Color(0.374516, 0.095849, 0.096216, 1)
+Button/styles/disabled = SubResource("StyleBoxEmpty_agw6t")
+Button/styles/disabled_mirrored = SubResource("StyleBoxEmpty_cr3we")
+Button/styles/focus = SubResource("StyleBoxEmpty_okxks")
+Button/styles/hover = SubResource("StyleBoxEmpty_wri83")
+Button/styles/hover_mirrored = SubResource("StyleBoxEmpty_hxbsr")
+Button/styles/hover_pressed = SubResource("StyleBoxEmpty_aarei")
+Button/styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ciaw3")
+Button/styles/normal = SubResource("StyleBoxEmpty_mfpr6")
+Button/styles/normal_mirrored = SubResource("StyleBoxEmpty_0ulnm")
+Button/styles/pressed = SubResource("StyleBoxEmpty_tl4an")
+Button/styles/pressed_mirrored = SubResource("StyleBoxEmpty_bqhtr")
